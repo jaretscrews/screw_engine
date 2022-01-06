@@ -10,6 +10,6 @@ include_directories(${OPENGL_INCLUDE_DIRS})
 
 add_subdirectory(external)
 
-add_executable(screw_engine main.cpp)
+add_executable(screw_engine main.cpp engine.cpp gui.cpp gui.h)
 
 target_link_libraries(screw_engine ${SDL2_LIBRARIES} ${OPENGL_LIBRARIES} ImGui)
